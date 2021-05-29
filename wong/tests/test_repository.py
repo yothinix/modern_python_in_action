@@ -28,7 +28,7 @@ def _():
     assert 3 == len(actual)
 
 
-@test('test get all book order by length should return a book')
+@test('test get all book order by length should return books')
 def _():
     expected = "Fluent Python: Clear, Concise, and Effective Programming " \
         "1st Edition"
@@ -39,3 +39,12 @@ def _():
 
     assert expected == actual[0]['name']
     assert expected2 == actual[1]['name']
+
+@test('test get all book without arguments should return books')
+def _():
+    expected = 'Automate the Boring Stuff with Python, 2nd Edition: ' \
+        'Practical Programming for Total Beginners'
+
+    actual = repository.get_all_book()
+
+    assert expected == actual[0]['name']
