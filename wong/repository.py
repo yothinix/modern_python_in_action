@@ -13,3 +13,14 @@ class BookRepository:
 
     def find_by_author(self, author: str) -> list[Book]:
         return [book for book in self.books if author in book['author']]
+
+    def get_all_book(
+        self,
+        sorted_key: str = 'name',
+        reverse: bool = False
+    ) -> list[Book]:
+
+        return sorted(
+            self.books,
+            key=lambda book: (book[sorted_key]),
+            reverse=reverse)
