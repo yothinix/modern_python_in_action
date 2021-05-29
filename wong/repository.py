@@ -1,4 +1,4 @@
-from wong.reader import load_db
+from .reader import load_db
 from .model import Book
 
 
