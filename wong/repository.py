@@ -1,3 +1,4 @@
+from datetime import date
 from .reader import load_db
 from .model import Book
 
@@ -24,3 +25,9 @@ class BookRepository:
             self.books,
             key=lambda book: (book[sorted_key]),
             reverse=reverse)
+
+    def find_by_date_range(self, start_date: date, end_date: date):
+        return [
+            book
+            for book in self.books
+            if start_date < book['publication_date'] < end_date]
