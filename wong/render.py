@@ -3,10 +3,12 @@ from rich.table import Table
 
 from .model import Book
 
+from .utils import get_random_color
+
 
 def render_header(table: Table, book: Book) -> Table:
     for key, _ in book.items():
-        table.add_column(key, justify='right')
+        table.add_column(key, style=get_random_color(), justify='right')
     return table
 
 

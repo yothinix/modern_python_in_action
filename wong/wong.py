@@ -1,5 +1,9 @@
-def main() -> None:
-    pass
+from .repository import BookRepository
+from .render import render
 
-    # TODO: Render class
-    # This should render result in the form of table
+
+def main() -> None:
+    repository = BookRepository()
+    result = repository.get_all_book()
+
+    render(result)
