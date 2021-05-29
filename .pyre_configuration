@@ -1,0 +1,7 @@
+{
+  "source_directories": [
+    "./wong"
+  ],
+  "taint_models_path": "/Users/yothinix/projects/_class/modern_python_in_action/venv/lib",
+  "strict": true
+}
