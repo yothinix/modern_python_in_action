@@ -1,0 +1,5 @@
+pyre
+
+flake8 wong
+
+PYTHONPATH=./wong ward
