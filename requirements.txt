@@ -1,3 +1,5 @@
+flake8==3.9.2
 ipdb==0.13.8
 ipython==7.24.0
 pyre-check==0.9.3
+ward==0.57.2b0
