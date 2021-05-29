@@ -3,6 +3,7 @@ from rich.prompt import Prompt
 
 from .repository import BookRepository
 from .render import render
+from .utils import get_date_input
 
 
 def main() -> None:
@@ -10,8 +11,8 @@ def main() -> None:
 
     title = 'Please choose query mode: '
     options = ['List all', 'find by name', 'find by author', 'find by date range']
-    _, index = pick(options, title)
-    print(index)
+    option, index = pick(options, title)
+    print(f'Current mode: {index}: {option}')
 
     if index == 0:
         is_sort = Prompt.ask("Want to sort?", choices=["Yes", "No"], default="No")
@@ -29,7 +30,13 @@ def main() -> None:
         author = Prompt.ask("Which author?: ")
         result = repository.find_by_author(author)
     elif index == 3:
-        pass
+        raw_start_date = Prompt.ask("Enter start date (YYYY-MM-DD): ")
+        raw_end_date = Prompt.ask("Enter start date (YYYY-MM-DD): ")
+
+        result = repository.find_by_date_range(
+            start_date=get_date_input(raw_start_date),
+            end_date=get_date_input(raw_end_date)
+        )
     else:
         print('Not choosing any mode end program')
 
