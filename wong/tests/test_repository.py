@@ -53,7 +53,7 @@ def _():
 
 
 @test('test find by date range should return books')
-def _():
+def _() -> None:
     expected1 = 'Python Basics: A Practical Introduction to Python 3'
     expected2 = 'Black Hat Python, 2nd Edition: Python Programming for ' \
         'Hackers and Pentesters'

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     pass
     # TODO: Query selector
     #   I'm feeling lucky mode
