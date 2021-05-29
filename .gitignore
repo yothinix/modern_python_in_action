@@ -4,3 +4,4 @@ __pycache__
 venv
 .pyre
 .pyre_configuration
+.pytest_cache
