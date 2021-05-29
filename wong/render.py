@@ -1,9 +1,9 @@
 from rich.console import Console
 from rich.table import Table
 
-from .model import Book
+from model import Book
 
-from .utils import get_random_color
+from utils import get_random_color
 
 
 def render_header(table: Table, book: Book) -> Table:

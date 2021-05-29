@@ -1,12 +1,12 @@
 from datetime import date
-from .reader import load_db
-from .model import Book
+from reader import load_db
+from model import Book
 
 
 class BookRepository:
     books: list[Book]
 
-    def __init__(self, file_name: str = 'book-db.csv') -> None:
+    def __init__(self, file_name: str = './book-db.csv') -> None:
         self.books = load_db(file_name)
 
     def find_by_name(self, name: str) -> list[Book]:

@@ -1,7 +1,7 @@
 from datetime import date
 from ward import test
 
-from ..repository import BookRepository
+from repository import BookRepository
 
 
 repository = BookRepository()

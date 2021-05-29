@@ -1,9 +1,9 @@
 from pick import pick
 from rich.prompt import Prompt
 
-from .repository import BookRepository
-from .render import render
-from .utils import get_date_input
+from repository import BookRepository
+from render import render
+from utils import get_date_input
 
 
 def main() -> None:
@@ -52,3 +52,7 @@ def main() -> None:
         print("Not choosing any mode end program")
 
     render(result)
+
+
+if __name__ == '__main__':
+    main()

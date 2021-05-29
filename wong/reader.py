@@ -1,14 +1,14 @@
 import csv
 from datetime import datetime, date
 
-from .model import Book
+from model import Book
 
 
 def format_date(raw_date: str) -> date:
     return datetime.strptime(raw_date, '%B %d, %Y').date()
 
 
-def load_db(filename: str = 'book-db.csv') -> list[Book]:
+def load_db(filename: str = './book-db.csv') -> list[Book]:
     books = []
     with open(filename) as csv_file:
         reader = csv.DictReader(csv_file, delimiter=',')

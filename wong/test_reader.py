@@ -2,7 +2,7 @@ from datetime import date
 
 from ward import test
 
-from ..reader import format_date, load_db
+from reader import format_date, load_db
 
 
 @test('test_format_date_should_return_date')
@@ -13,7 +13,7 @@ def _() -> None:
 
 
 @test('test load db should return book list')
-def _() -> None:
+def _b() -> None:
     expected = 20
     actual = load_db()
     assert expected == len(actual)
