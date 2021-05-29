@@ -1,0 +1,14 @@
+name,author,length,language,publication_date,isbn13,publisher
+Python Tricks: A Buffet of Awesome Python Features,Dan Bader,301,English,"October 25, 2017",978-1775093305,Dan Bader
+"Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming",Eric Matthes,544,English,"May 3, 2019",978-1593279288,No Starch Press
+Python Basics: A Practical Introduction to Python 3,David Amos,635,English,"March 16, 2021",978-1775093329,Real Python
+"Fluent Python: Clear, Concise, and Effective Programming 1st Edition",Luciano Ramalho,792,English,"September 1, 2015",978-1491946008,O'Reilly Media
+Effective Python: 90 Specific Ways to Write Better Python (Effective Software Development Series) 2nd Edition,Brett Slatkin,356,English,"November 15, 2019",978-0134853987,Addison-Wesley Professional
+"Automate the Boring Stuff with Python, 2nd Edition: Practical Programming for Total Beginners",Al Sweigart,592,English,"November 12, 2019",978-1593279929,No Starch Press
+"Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython",Wes McKinney,550,English,"October 31, 2017",978-1491957660,O'Reilly Media
+Two Scoops of Django 1.11: Best Practices for the Django Web Framework,"Daniel Roy Greenfeld,Audrey Roy Greenfeld",555,English,"June 30, 2017",978-0692915721,Two Scoops Press
+How to Design Programs: An Introduction to Programming and Computing (The MIT Press) second edition,"Matthias Felleisen,Robert Bruce Findler,Matthew Flatt,Shriram Krishnamurthi",792,English,"May 4, 2018",978-0262534802,The MIT Press
+Structure and Interpretation of Computer Programs - 2nd Edition,"Harold Abelson,	
+Gerald Jay Sussman",657,English,"July 25, 1996",978-0262011532,The MIT Press
+Patterns of Enterprise Application Architecture,Martin Fowler,560,English,"November 5, 2002",978-0321127426,Addison-Wesley Professional
+Refactoring: Improving the Design of Existing Code,Martin Fowler,448,English,"November 30, 2018",978-0134757599,Addison-Wesley Professional
