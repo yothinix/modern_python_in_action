@@ -3,8 +3,6 @@ def main():
     # TODO: Query selector
     #   I'm feeling lucky mode
     #   call repository class
-    #   - query by name
-    #   - query by author
     #   - query by pages
     #   - query by year range
 

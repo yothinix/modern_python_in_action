@@ -10,3 +10,6 @@ class BookRepository:
 
     def find_by_name(self, name: str) -> list[Book]:
         return [book for book in self.books if name in book['name']]
+
+    def find_by_author(self, author: str) -> list[Book]:
+        return [book for book in self.books if author in book['author']]
