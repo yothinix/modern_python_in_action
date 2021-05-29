@@ -1,5 +1,3 @@
-import datetime
-
 from ward import test
 
 from ..repository import BookRepository
