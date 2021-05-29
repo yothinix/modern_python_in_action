@@ -1,0 +1,6 @@
+__pycache__
+.vscode
+.mypy_cache
+venv
+.pyre
+.pyre_configuration
