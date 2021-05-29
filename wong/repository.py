@@ -16,9 +16,7 @@ class BookRepository:
         return [book for book in self.books if author in book['author']]
 
     def get_all_book(
-        self,
-        sorted_key: str = 'name',
-        reverse: bool = False
+        self, sorted_key: str = 'name', reverse: bool = False
     ) -> list[Book]:
 
         return sorted(
@@ -26,7 +24,9 @@ class BookRepository:
             key=lambda book: (book[sorted_key]),
             reverse=reverse)
 
-    def find_by_date_range(self, start_date: date, end_date: date) -> list[Book]:
+    def find_by_date_range(
+        self, start_date: date, end_date: date
+    ) -> list[Book]:
         return [
             book
             for book in self.books
